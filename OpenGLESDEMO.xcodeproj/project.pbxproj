@@ -15,6 +15,7 @@
 		B283B85220033310008AD780 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B283B85120033310008AD780 /* main.m */; };
 		B283B85C20033310008AD780 /* OpenGLESDEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B283B85B20033310008AD780 /* OpenGLESDEMOTests.m */; };
 		B283B86720033310008AD780 /* OpenGLESDEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B283B86620033310008AD780 /* OpenGLESDEMOUITests.m */; };
+		B283B878200335CE008AD780 /* learn1_view.m in Sources */ = {isa = PBXBuildFile; fileRef = B283B877200335CE008AD780 /* learn1_view.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B283B86220033310008AD780 /* OpenGLESDEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLESDEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B283B86620033310008AD780 /* OpenGLESDEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLESDEMOUITests.m; sourceTree = "<group>"; };
 		B283B86820033310008AD780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B283B876200335CE008AD780 /* learn1_view.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = learn1_view.h; sourceTree = "<group>"; };
+		B283B877200335CE008AD780 /* learn1_view.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = learn1_view.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +104,7 @@
 		B283B84120033310008AD780 /* OpenGLESDEMO */ = {
 			isa = PBXGroup;
 			children = (
-				B283B8742003353C008AD780 /* L1 */,
+				B283B8752003359B008AD780 /* Learn1 */,
 				B283B84220033310008AD780 /* AppDelegate.h */,
 				B283B84320033310008AD780 /* AppDelegate.m */,
 				B283B84520033310008AD780 /* ViewController.h */,
@@ -133,11 +136,13 @@
 			path = OpenGLESDEMOUITests;
 			sourceTree = "<group>";
 		};
-		B283B8742003353C008AD780 /* L1 */ = {
+		B283B8752003359B008AD780 /* Learn1 */ = {
 			isa = PBXGroup;
 			children = (
+				B283B876200335CE008AD780 /* learn1_view.h */,
+				B283B877200335CE008AD780 /* learn1_view.m */,
 			);
-			path = L1;
+			path = Learn1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B283B84720033310008AD780 /* ViewController.m in Sources */,
+				B283B878200335CE008AD780 /* learn1_view.m in Sources */,
 				B283B85220033310008AD780 /* main.m in Sources */,
 				B283B84420033310008AD780 /* AppDelegate.m in Sources */,
 			);
