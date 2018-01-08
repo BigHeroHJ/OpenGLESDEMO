@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "learn1_view.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    learn1_view *view1 = [[learn1_view alloc] initWithFrame:screenBounds];
+    [self.window addSubview:view1];
     return YES;
 }
 
