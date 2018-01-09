@@ -13,17 +13,13 @@
 //2.CAEAGLLayer+EAGLContext
 #import <UIKit/UIKit.h>
 #import "learn1_view.h"
+#import <QuartzCore/QuartzCore.h>
 #include <OpenGLES/ES2/gl.h>
 #include <OpenGLES/ES2/glext.h>
-#import <QuartzCore/QuartzCore.h>
 
 
 @interface learn1_view()
-{
-    CAEAGLLayer  *_eaLayer;
-    EAGLContext  *_context;//EAGLContext对象管理OpenGL绘制所需要的所有信息
-    GLuint   _colorRenderBuffer;
-}
+
 
 @end
 
@@ -55,6 +51,7 @@
 - (void)setupLayer
 {
     _eaLayer = (CAEAGLLayer *)self.layer;
+   // self.backgroundColor = [UIColor redColor];
     _eaLayer.opaque = YES;//CAEAGLLayer默认是透明的
 }
 
@@ -72,13 +69,14 @@
         exit(1);
     };
 }
+
 //OpenGL保存 了一系列缓存（buffers），用于绘制各方面的内存块。例如：glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)，就是将这两个值进行逻辑或通知OpenGL清除两个不同的缓存－颜色缓存（color buffer）和深度缓存（depth buffer）
 - (void)setupRenderBuffer
 {
     //创建render buffer
     glGenRenderbuffers(1,&_colorRenderBuffer);
     //绑定一个buffer
-    glBindBuffer(GL_RENDERBUFFER, _colorRenderBuffer);
+    glBindRenderbuffer(GL_RENDERBUFFER, _colorRenderBuffer);
     [_context renderbufferStorage:GL_RENDERBUFFER fromDrawable:_eaLayer];
 }
 
@@ -90,7 +88,8 @@
 {
     GLuint frameBuffer;
     glGenBuffers(1, &frameBuffer);
-    glBindBuffer(GL_FRAMEBUFFER, frameBuffer);
+    //glBindBuffer  &  glBindFrameBuffer   & glBindRenderBuffer 三种 使用 场景？
+    glBindFramebuffer(GL_FRAMEBUFFER, frameBuffer);
     glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, _colorRenderBuffer);
 }
 
@@ -100,8 +99,13 @@
 //
 //3. 调用OpenGL context的presentRenderbuffer方法，把缓冲区（render buffer和color buffer）的颜色呈现到UIView上。
 - (void)render{
-    glClearColor(0, 104.0/255.0, 55.0/255.0, 1.0);
-    glClear(GL_COLOR_BUFFER_BIT);//GL_DEPTH_BUFFER_BIT GL_STENCIL_BUFFER_BIT GL_COLOR_BUFFER_BIT 三种
+    //这两句 顺序 对调 就出不来了？
+   glClearColor(5.0/255.0f, 14.0/255.0, 104.0/255.0, 1);//GL_STENCIL_BUFFER_BIT
+    glClear(GL_COLOR_BUFFER_BIT );//GL_DEPTH_BUFFER_BIT
+    
+     //GL_COLOR_BUFFER_BIT 三种
+   // GL_RENDERBUFFER_WIDTH
+//    glColorMask(5.0/255.0f, 10.0/255.0, 104.0/255.0, 1);
     [_context presentRenderbuffer:GL_RENDERBUFFER];
 }
 @end

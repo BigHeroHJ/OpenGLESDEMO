@@ -8,6 +8,7 @@
 
 #import "OpenGLViewController.h"
 #import "learn1_view.h"
+#import "OpenGLView1.h"
 
 @interface OpenGLViewController ()
 {
@@ -20,9 +21,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
+//    gl_view = [[learn1_view alloc] initWithFrame:self.view.frame];
+//    //[[UIApplication sharedApplication] keyWindow]
+//   [self.view addSubview:gl_view];
+    
     gl_view = [[learn1_view alloc] initWithFrame:self.view.frame];
     //[[UIApplication sharedApplication] keyWindow]
-   [self.view addSubview:gl_view];
+    [self.view addSubview:gl_view];
 
 }
 

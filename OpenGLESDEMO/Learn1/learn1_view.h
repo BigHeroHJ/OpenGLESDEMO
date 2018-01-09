@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface learn1_view : UIView
-
+{
+    CAEAGLLayer  *_eaLayer;
+    EAGLContext  *_context;//EAGLContext对象管理OpenGL绘制所需要的所有信息
+    GLuint   _colorRenderBuffer;
+}
 @end
