@@ -1,0 +1,14 @@
+在OpenGL有缓冲区对象之前，应用程序只有有限的选择可以在GPU中存储数据，现在有了缓冲区之后对GPU存储空间的操作更加灵活方便了。
+缓冲区有很多用途，比如它能够保存顶点数据、像素数据、纹理数据、着色器处理的输入、不同阶段着色器的输出。
+要使用缓冲区首先要创建缓冲区：Gluint pixBuffObjs[1];   glGenBuffers(1,pixBuffObjs)。
+    前者定义一个无符号整形数组，其长度为一，在OpenGL中unsigned int 对应于Gluint；
+    后者将定义的Gluint 数组产生一个缓冲区对象，
+
+创建完缓冲区以后要将这个缓冲区数组的每一个绑定到一个绑定点，比如绑定到GL_PIXEL_PACK_BUFFER，这个绑定点是像素包装操作的目标缓冲区，
+所谓像素包装就是对像素的格式重新格式化，比如以前像素是按照RGB每个颜色分量8个位存储的，包装后可以是按照BRG每个颜色分量2 6 8位的方式存储，对应于包装还有解包装，就是上述过程的逆过程。
+
+如前所述，绑定一个缓冲区的操作为：glBindBuffer(GL_PIXEL_PACK_BUFFER,pixBuffObjs[0]);那么这个操作就将pixBuffObjs的第一个对象绑定到GL_PIXEL_PACK_BUFFER绑定点了，
+    那么以后执行glReadPixels之类的像素的包装操作便会将格式化后的像素数据存储于刚才绑定到那个绑定点的缓冲区了。
+    用完之后可以删除缓冲区：glDeleteBuffers(int n,Gluint pixBuffObjs),n是缓冲区的数目，也即缓冲区数组的长度，pixBuffObjs是定义的缓冲区数组的名称。
+    绑定完缓冲区后就可以用数据填充缓冲区了，glBufferData(GL_PIXEL_PACK_BUFFER，pixelDataSize,pixelData,GL_DYNAMIC_COPY);这个函数的第一个参数是GL_PIXEL_PACK_BUFFER,由于之前我们已经将pixBuf-fObjs[0]绑定到了这个绑定点，那么数据就会被存储在这个缓冲区里面，虽然这个函数没有出现该缓冲区的名字，
+在这里GL_PIXEL_PACK_-相当于是个中介，负责联系“房东”与“房客”；第二个参数是像素数据的大小；第三个参数是指向像素数据的地址指针；最后一个参数是用来指定如何使用缓冲区

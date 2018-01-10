@@ -20,6 +20,8 @@
 		B283B85C20033310008AD780 /* OpenGLESDEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B283B85B20033310008AD780 /* OpenGLESDEMOTests.m */; };
 		B283B86720033310008AD780 /* OpenGLESDEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B283B86620033310008AD780 /* OpenGLESDEMOUITests.m */; };
 		B283B878200335CE008AD780 /* learn1_view.m in Sources */ = {isa = PBXBuildFile; fileRef = B283B877200335CE008AD780 /* learn1_view.m */; };
+		B29D3EA12005D82900B56F83 /* 参数解释 in Resources */ = {isa = PBXBuildFile; fileRef = B29D3EA02005D82900B56F83 /* 参数解释 */; };
+		B29D3EA52005DB7200B56F83 /* OpenGlESView2.m in Sources */ = {isa = PBXBuildFile; fileRef = B29D3EA42005DB7200B56F83 /* OpenGlESView2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,9 @@
 		B283B86820033310008AD780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B283B876200335CE008AD780 /* learn1_view.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = learn1_view.h; sourceTree = "<group>"; };
 		B283B877200335CE008AD780 /* learn1_view.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = learn1_view.m; sourceTree = "<group>"; };
+		B29D3EA02005D82900B56F83 /* 参数解释 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "参数解释"; sourceTree = "<group>"; };
+		B29D3EA32005DB7200B56F83 /* OpenGlESView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGlESView2.h; sourceTree = "<group>"; };
+		B29D3EA42005DB7200B56F83 /* OpenGlESView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGlESView2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +131,8 @@
 		B283B84120033310008AD780 /* OpenGLESDEMO */ = {
 			isa = PBXGroup;
 			children = (
+				B29D3EA22005DB5E00B56F83 /* OpenGL ES_view2 */,
+				B29D3E9F2005D81000B56F83 /* New Group */,
 				B283B8752003359B008AD780 /* Learn1 */,
 				B283B84220033310008AD780 /* AppDelegate.h */,
 				B283B84320033310008AD780 /* AppDelegate.m */,
@@ -169,6 +176,23 @@
 				3F8240BD2003B49E003CCF2E /* OpenGLViewController.m */,
 			);
 			path = Learn1;
+			sourceTree = "<group>";
+		};
+		B29D3E9F2005D81000B56F83 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				B29D3EA02005D82900B56F83 /* 参数解释 */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		B29D3EA22005DB5E00B56F83 /* OpenGL ES_view2 */ = {
+			isa = PBXGroup;
+			children = (
+				B29D3EA32005DB7200B56F83 /* OpenGlESView2.h */,
+				B29D3EA42005DB7200B56F83 /* OpenGlESView2.m */,
+			);
+			path = "OpenGL ES_view2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +304,7 @@
 				B283B84F20033310008AD780 /* LaunchScreen.storyboard in Resources */,
 				B283B84C20033310008AD780 /* Assets.xcassets in Resources */,
 				B283B84A20033310008AD780 /* Main.storyboard in Resources */,
+				B29D3EA12005D82900B56F83 /* 参数解释 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +332,7 @@
 				B283B84720033310008AD780 /* ViewController.m in Sources */,
 				B283B878200335CE008AD780 /* learn1_view.m in Sources */,
 				3F8240BE2003B49E003CCF2E /* OpenGLViewController.m in Sources */,
+				B29D3EA52005DB7200B56F83 /* OpenGlESView2.m in Sources */,
 				3F6AE72820050A1D001B7772 /* OpenGLView1.m in Sources */,
 				B283B85220033310008AD780 /* main.m in Sources */,
 				B283B84420033310008AD780 /* AppDelegate.m in Sources */,
