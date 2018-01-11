@@ -11,6 +11,8 @@
 		3F8240BE2003B49E003CCF2E /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8240BD2003B49E003CCF2E /* OpenGLViewController.m */; };
 		3F8240C12003BD16003CCF2E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8240C02003BD16003CCF2E /* OpenGLES.framework */; };
 		3F8240C32003BD1C003CCF2E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8240C22003BD1C003CCF2E /* QuartzCore.framework */; };
+		3F87AF6420064BFB006FA211 /* OpenGLViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F87AF6320064BFB006FA211 /* OpenGLViewController1.m */; };
+		3F87AF6C200660DD006FA211 /* OpenGL ES应用开发实践 指南 iOS卷(jb51.net) (1).pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3F87AF6B200660DD006FA211 /* OpenGL ES应用开发实践 指南 iOS卷(jb51.net) (1).pdf */; };
 		B283B84420033310008AD780 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B283B84320033310008AD780 /* AppDelegate.m */; };
 		B283B84720033310008AD780 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B283B84620033310008AD780 /* ViewController.m */; };
 		B283B84A20033310008AD780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B283B84820033310008AD780 /* Main.storyboard */; };
@@ -48,6 +50,9 @@
 		3F8240BD2003B49E003CCF2E /* OpenGLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
 		3F8240C02003BD16003CCF2E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		3F8240C22003BD1C003CCF2E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3F87AF6220064BFB006FA211 /* OpenGLViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController1.h; sourceTree = "<group>"; };
+		3F87AF6320064BFB006FA211 /* OpenGLViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController1.m; sourceTree = "<group>"; };
+		3F87AF6B200660DD006FA211 /* OpenGL ES应用开发实践 指南 iOS卷(jb51.net) (1).pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "OpenGL ES应用开发实践 指南 iOS卷(jb51.net) (1).pdf"; sourceTree = "<group>"; };
 		B283B83F20033310008AD780 /* OpenGLESDEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLESDEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B283B84220033310008AD780 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B283B84320033310008AD780 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -181,6 +186,7 @@
 		B29D3E9F2005D81000B56F83 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				3F87AF6B200660DD006FA211 /* OpenGL ES应用开发实践 指南 iOS卷(jb51.net) (1).pdf */,
 				B29D3EA02005D82900B56F83 /* 参数解释 */,
 			);
 			path = "New Group";
@@ -191,6 +197,8 @@
 			children = (
 				B29D3EA32005DB7200B56F83 /* OpenGlESView2.h */,
 				B29D3EA42005DB7200B56F83 /* OpenGlESView2.m */,
+				3F87AF6220064BFB006FA211 /* OpenGLViewController1.h */,
+				3F87AF6320064BFB006FA211 /* OpenGLViewController1.m */,
 			);
 			path = "OpenGL ES_view2";
 			sourceTree = "<group>";
@@ -305,6 +313,7 @@
 				B283B84C20033310008AD780 /* Assets.xcassets in Resources */,
 				B283B84A20033310008AD780 /* Main.storyboard in Resources */,
 				B29D3EA12005D82900B56F83 /* 参数解释 in Resources */,
+				3F87AF6C200660DD006FA211 /* OpenGL ES应用开发实践 指南 iOS卷(jb51.net) (1).pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +345,7 @@
 				3F6AE72820050A1D001B7772 /* OpenGLView1.m in Sources */,
 				B283B85220033310008AD780 /* main.m in Sources */,
 				B283B84420033310008AD780 /* AppDelegate.m in Sources */,
+				3F87AF6420064BFB006FA211 /* OpenGLViewController1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
