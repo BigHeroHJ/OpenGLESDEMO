@@ -7,15 +7,27 @@
 //
 
 #import "OpenGlESView2.h"
-#import <OpenGLES/ES2/gl.h>
-#import <GLKit/GLKit.h>
+
+
+@interface OpenGlESView2()
+{
+    EAGLContext   *_context;
+}
+@end
 
 @implementation OpenGlESView2
 
 
-+ (Class)class
+//+ (Class)class
+//{
+//    return [GLKView class];
+//}
+
+
+- (void)setupContext
 {
-    return [GLKView class];
+    _context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    
 }
 /*
 // Only override drawRect: if you perform custom drawing.

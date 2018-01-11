@@ -9,7 +9,9 @@
 // https://learnopengl-cn.github.io/01%20Getting%20started/01%20OpenGL/
 
 #import <UIKit/UIKit.h>
+#import <OpenGLES/ES2/gl.h>
+#import <GLKit/GLKit.h>
 
-@interface OpenGlESView2 : UIView
+@interface OpenGlESView2 : GLKView
 
 @end
