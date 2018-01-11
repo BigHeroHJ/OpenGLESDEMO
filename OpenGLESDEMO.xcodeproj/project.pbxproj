@@ -24,6 +24,8 @@
 		B283B878200335CE008AD780 /* learn1_view.m in Sources */ = {isa = PBXBuildFile; fileRef = B283B877200335CE008AD780 /* learn1_view.m */; };
 		B29D3EA12005D82900B56F83 /* 参数解释 in Resources */ = {isa = PBXBuildFile; fileRef = B29D3EA02005D82900B56F83 /* 参数解释 */; };
 		B29D3EA52005DB7200B56F83 /* OpenGlESView2.m in Sources */ = {isa = PBXBuildFile; fileRef = B29D3EA42005DB7200B56F83 /* OpenGlESView2.m */; };
+		B2DE289F20072C23007A5274 /* 纹理坐标解释h in Resources */ = {isa = PBXBuildFile; fileRef = B2DE289E20072C23007A5274 /* 纹理坐标解释h */; };
+		B2DE28A120072C4F007A5274 /* 纹理坐标解释m in Resources */ = {isa = PBXBuildFile; fileRef = B2DE28A020072C4F007A5274 /* 纹理坐标解释m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		B29D3EA02005D82900B56F83 /* 参数解释 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "参数解释"; sourceTree = "<group>"; };
 		B29D3EA32005DB7200B56F83 /* OpenGlESView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGlESView2.h; sourceTree = "<group>"; };
 		B29D3EA42005DB7200B56F83 /* OpenGlESView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGlESView2.m; sourceTree = "<group>"; };
+		B2DE289E20072C23007A5274 /* 纹理坐标解释h */ = {isa = PBXFileReference; lastKnownFileType = text; path = "纹理坐标解释h"; sourceTree = "<group>"; };
+		B2DE28A020072C4F007A5274 /* 纹理坐标解释m */ = {isa = PBXFileReference; lastKnownFileType = text; path = "纹理坐标解释m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,8 @@
 			children = (
 				3F87AF6B200660DD006FA211 /* OpenGL ES应用开发实践 指南 iOS卷(jb51.net) (1).pdf */,
 				B29D3EA02005D82900B56F83 /* 参数解释 */,
+				B2DE289E20072C23007A5274 /* 纹理坐标解释h */,
+				B2DE28A020072C4F007A5274 /* 纹理坐标解释m */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -312,6 +318,8 @@
 				B283B84F20033310008AD780 /* LaunchScreen.storyboard in Resources */,
 				B283B84C20033310008AD780 /* Assets.xcassets in Resources */,
 				B283B84A20033310008AD780 /* Main.storyboard in Resources */,
+				B2DE289F20072C23007A5274 /* 纹理坐标解释h in Resources */,
+				B2DE28A120072C4F007A5274 /* 纹理坐标解释m in Resources */,
 				B29D3EA12005D82900B56F83 /* 参数解释 in Resources */,
 				3F87AF6C200660DD006FA211 /* OpenGL ES应用开发实践 指南 iOS卷(jb51.net) (1).pdf in Resources */,
 			);

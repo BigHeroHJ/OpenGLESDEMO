@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "OpenGLViewController.h"
+#import "OpenGLViewController1.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
@@ -23,7 +24,7 @@
     [super viewDidLoad];
     _dataArray = [NSMutableArray array];
     [_dataArray addObject:@"OpenGL es2.0 创建视图"];
-    
+    [_dataArray addObject:@"OpenGL es2.0 GLKViewController1"];
     [_tableview reloadData];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -42,6 +43,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if(indexPath.row ==0){
         OpenGLViewController * openglVC = [OpenGLViewController new];
+        [self.navigationController pushViewController:openglVC animated:YES];
+    }
+    if(indexPath.row == 1){
+        OpenGLViewController1 * openglVC = [OpenGLViewController1 new];
         [self.navigationController pushViewController:openglVC animated:YES];
     }
 }

@@ -7,9 +7,11 @@
 //
 
 #import <GLKit/GLKit.h>
+
 struct positionStruct {
-    GLKVector3  positionCoords;
+     GLKVector3  positionCoords;
 };
+
 @interface OpenGLViewController1 : GLKViewController
 
 @end
